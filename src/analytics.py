@@ -42,7 +42,7 @@ def get_match_stats():
     sql_temp = """
     SELECT 
         season AS "Время года", 
-        ROUND(AVG(temperature), 1) AS "Средняя температура"
+        ROUND(AVG(temperature)::numeric, 1) AS "Средняя температура"
     FROM public.rpl_matches_weather
     GROUP BY season
     ORDER BY "Средняя температура" DESC

@@ -33,19 +33,26 @@ def fetch_weather():
     """
     coordinates = {
         "Moscow": {"lat": 55.7558, "lon": 37.6173},
+        "Moskva": {"lat": 55.7558, "lon": 37.6173},
         "Saint Petersburg": {"lat": 59.9343, "lon": 30.3351},
+        "St. Petersburg": {"lat": 59.9343, "lon": 30.3351},
         "Krasnodar": {"lat": 45.0355, "lon": 38.9753},
         "Rostov-na-Donu": {"lat": 47.2221, "lon": 39.7188},
+        "Rostov-on-Don": {"lat": 47.2221, "lon": 39.7188},
         "Samara": {"lat": 53.2001, "lon": 50.15},
-        "Kazan": {"lat": 55.7887, "lon": 49.1221},
+        "Kazan'": {"lat": 55.7887, "lon": 49.1221}, 
+        "Nizhniy Novgorod": {"lat": 56.3269, "lon": 44.0059},
         "Nizhny Novgorod": {"lat": 56.3269, "lon": 44.0059},
-        "Ekaterinburg": {"lat": 56.8389, "lon": 60.6057},
-        "Voronezh": {"lat": 51.672, "lon": 39.1843},
+        "Voronezh": {"lat": 51.6720, "lon": 39.1843},
+        "Groznyi": {"lat": 43.3171, "lon": 45.6967},
         "Grozny": {"lat": 43.3171, "lon": 45.6967},
         "Makhachkala": {"lat": 42.9764, "lon": 47.5024},
-        "Tula": {"lat": 54.1961, "lon": 37.6182},
+        "Kaspiysk": {"lat": 42.8851, "lon": 47.6385},
         "Khimki": {"lat": 55.8887, "lon": 37.4412},
-        "Orenburg": {"lat": 51.7681, "lon": 55.097}
+        "Orenburg": {"lat": 51.7681, "lon": 55.0970},
+        "Rostoshi": {"lat": 51.7681, "lon": 55.0970},
+        "Ekaterinburg": {"lat": 56.8389, "lon": 60.6057},
+        "Sochi": {"lat": 43.5992, "lon": 39.7257}
     }
 
     df_matches = pd.read_csv(input_path)
