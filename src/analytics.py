@@ -113,8 +113,9 @@ if __name__ == "__main__":
 
     os.makedirs('plots', exist_ok=True)
 
-    # Линейный график df_temp
-    df_temp.plot(x='Время года', y='Средняя температура', kind='line', legend=False, color='blue')
+    # Столбчатый график df_temp
+    colors = ['#e28743','#65a765', '#d99b26', '#5ba4cf']
+    df_temp.plot(x='Время года', y='Средняя температура', kind='bar', legend=False, color=colors)
     plt.title('Средняя температура во время матчей РПЛ 2024/2025', fontsize=14, pad=15)
     plt.ylabel('Средняя температура, °C')
     plt.xticks(rotation=0)
